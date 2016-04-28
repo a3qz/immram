@@ -15,6 +15,7 @@ store = []
 num_islands = 3
 
 for i in range(num_islands):
+	os.system('cls' if os.name == 'nt' else 'clear')
 	store = []
 	move = 9999 
 	story = random.choice(JOURNEY.keys())
