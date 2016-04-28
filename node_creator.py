@@ -12,6 +12,7 @@ fp.close()
 more = "1"
 inner_dict = {}
 NODES = {}
+print JOURNEY.keys()
 #JOURNEY = {}
 while(more != "0"):
     inner_dict.clear()
