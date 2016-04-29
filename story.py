@@ -41,10 +41,14 @@ for i in range(num_islands):
 			sys.stdout.write('\n' +'\n' )
 		os.system('cls' if os.name == 'nt' else 'clear')
 		if move == 0:
+                        del JOURNEY[story]
 			continue
-		#sys.stdout.write('\n' +'\n' )
-		sys.stdout.write(  JOURNEY[story]["branches"][JOURNEY[story]["branches"].keys()[move-1]])
-		move = 9999
+                elif move in [1,2]:
+                        sys.stdout.write(  JOURNEY[story]["branches"][JOURNEY[story]["branches"].keys()[move-1]])
+                        raw_input("\n\n\nPress enter to continue\n")
+                        del JOURNEY[story]
+                        os.system('cls' if os.name == 'nt' else 'clear')
+                        move = 0
 
 
 
