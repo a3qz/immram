@@ -16,8 +16,8 @@ num_islands = 9999
 os.system('cls' if os.name == 'nt' else 'clear')
 sys.stdout.write("Welcome Traveler! You are about to embark on an epic quest.  You have recieved a prophecy that revaled to you great blessings will come if you return home safely from a sea voyage.  Therefore, you are going to set sail with a company of your closest and bravest companions, with whom you would trust your life.  " )
 sys.stdout.write('\n' +'\n')
-while not ((num_islands > 2 ) & (num_islands < 8)):
-	num_islands = input("Please enter the number of islands you would like to visit on this journey (3-7 please):  ")
+while not ((num_islands > 4 ) & (num_islands < 16)):
+	num_islands = input("Please enter the number of islands you would like to visit on this journey (5-15 please):  ")
 for i in range(num_islands):
 	os.system('cls' if os.name == 'nt' else 'clear')
 	store = []
