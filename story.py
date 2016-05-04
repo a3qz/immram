@@ -45,7 +45,7 @@ for i in range(num_islands):
 			continue
                 elif move in [1,2]:
                         sys.stdout.write(  JOURNEY[story]["branches"][JOURNEY[story]["branches"].keys()[move-1]])
-                        raw_input("\n\n\nPress enter to continue\n")
+                        raw_input("\n\n\nPress enter to continue on to the next island\n")
                         del JOURNEY[story]
                         os.system('cls' if os.name == 'nt' else 'clear')
                         move = 0
